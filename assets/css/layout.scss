@@ -1,0 +1,25 @@
+section {
+  @apply py-24;
+}
+
+.container {
+  @apply w-full md:max-w-screen-xl mx-auto;
+}
+
+.main-under-navigation {
+  @apply mx-auto;
+}
+
+.main-below-navigation {
+  @apply pt-16 mx-auto;
+}
+
+.column {
+  @apply flex flex-wrap items-start;
+}
+.column-item {
+  @apply w-full lg:w-1/2;
+}
+.item-container {
+  @apply p-4;
+}
