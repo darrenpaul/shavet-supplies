@@ -3,7 +3,12 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-item">
-          <h3 class="text-white pb-3">Branding</h3>
+          <div class="flex flex-col items-center">
+            <div class="w-28 mb-4">
+              <ShavetIcon :line-color="'white'" />
+            </div>
+            <h3 class="text-white">{{ CLIENT_COPY.companyName }}</h3>
+          </div>
         </div>
 
         <!-- TRADING HOURS -->
@@ -11,11 +16,7 @@
           <h3 class="text-white pb-3">
             {{ COMMON_COPY.tradingHours }}
           </h3>
-          <p
-            v-for="(line, index) in FOOTER_COPY.tradingHours"
-            :key="index"
-            class="text-white pb-3"
-          >
+          <p v-for="(line, index) in FOOTER_COPY.tradingHours" :key="index" class="text-white pb-3">
             {{ line }}
           </p>
         </div>
@@ -28,11 +29,7 @@
             <div class="mr-3">
               <a href="#">
                 <div class="icon-badge-white">
-                  <Icon
-                    icon="akar-icons:linkedin-fill"
-                    width="22"
-                    height="22"
-                  />
+                  <Icon icon="akar-icons:linkedin-fill" width="22" height="22" />
                 </div>
               </a>
             </div>
@@ -48,15 +45,7 @@
       </div>
     </div>
 
-    <div
-      class="
-        flex
-        items-center
-        justify-center
-        p-4
-        border-t border-dashed border-nav-link
-      "
-    >
+    <div class="flex items-center justify-center p-4 border-t border-dashed border-nav-link">
       <small class="text-center text-white">
         {{ FOOTER_COPY.copyright }}
       </small>
@@ -65,8 +54,9 @@
 </template>
 
 <script setup lang="ts">
-import { COMMON_COPY, FOOTER_COPY } from "~~/constants/copy";
-import { Icon } from "@iconify/vue";
+import { Icon } from '@iconify/vue'
+import { CLIENT_COPY, COMMON_COPY, FOOTER_COPY } from '~~/constants/copy'
+import ShavetIcon from '~~/components/icons/ShavetIcon.vue'
 </script>
 
 <style lang="scss">

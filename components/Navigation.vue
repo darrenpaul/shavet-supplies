@@ -1,63 +1,47 @@
 <template>
   <header>
-    <div
-      :class="[
-        'desktop-navigation',
-        solidNavigation && 'desktop-navigation-solid',
-      ]"
-    >
-      <div>Branding</div>
+    <div :class="['desktop-navigation', solidNavigation && 'desktop-navigation-solid']">
+      <div class="flex items-center">
+        <div class="flex w-10">
+          <ShavetIcon />
+        </div>
+        <h4 class="m-0 ml-4 h-full">{{ CLIENT_COPY.companyName }}</h4>
+      </div>
+
       <div class="links">
-        <NuxtLink
+        <a
           v-for="(link, index) in ROUTES"
           :key="index"
-          :class="[
-            'nav-link',
-            link.path === HOME_ROUTE.path && 'nav-link-active',
-          ]"
-          :to="link.path"
+          :class="['nav-link', link.path === HOME_ROUTE.path && 'nav-link-active']"
+          :href="link.path"
         >
           {{ link.name }}
-        </NuxtLink>
+        </a>
       </div>
       <div></div>
     </div>
+
     <div class="mobile-navigation">
       <div class="flex items-center justify-between w-full">
-        <div><p>Branding</p></div>
-        <button
-          class="mobile-toggle-button"
-          @click="showMobileMenu = !showMobileMenu"
-        >
-          <Icon
-            v-if="!showMobileMenu"
-            class="text-nav-link"
-            icon="gg:menu"
-            width="32"
-            height="32"
-          />
-          <Icon
-            v-else
-            class="text-nav-link"
-            icon="gg:menu-motion"
-            width="32"
-            height="32"
-          />
+        <div class="flex w-10">
+          <ShavetIcon />
+        </div>
+        <button class="mobile-toggle-button" @click="showMobileMenu = !showMobileMenu">
+          <Icon v-if="!showMobileMenu" class="text-nav-link" icon="gg:menu" width="32" height="32" />
+          <Icon v-else class="text-nav-link" icon="gg:menu-motion" width="32" height="32" />
         </button>
       </div>
+
       <div v-if="showMobileMenu" class="mobile-menu">
         <div class="links-mobile">
-          <NuxtLink
+          <a
             v-for="(link, index) in ROUTES"
             :key="index"
-            :class="[
-              'nav-link-mobile',
-              link.path === HOME_ROUTE.path && 'nav-link-active',
-            ]"
-            :to="link.path"
+            :class="['nav-link-mobile', link.path === HOME_ROUTE.path && 'nav-link-active']"
+            :href="link.path"
           >
             {{ link.name }}
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>
@@ -65,23 +49,26 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-import { ROUTES, HOME_ROUTE } from "~~/constants/routes";
-const solidNavigation = ref(false);
-const showMobileMenu = ref(false);
+import { Icon } from '@iconify/vue'
+import { CLIENT_COPY } from '~~/constants/copy'
+import { ROUTES, HOME_ROUTE } from '~~/constants/routes'
+import ShavetIcon from '~~/components/icons/ShavetIcon.vue'
+
+const solidNavigation = ref(false)
+const showMobileMenu = ref(false)
 
 const handleScroll = () => {
-  const currentScrollValue = window.scrollY;
+  const currentScrollValue = window.scrollY
   if (currentScrollValue >= 50) {
-    solidNavigation.value = true;
+    solidNavigation.value = true
   } else {
-    solidNavigation.value = false;
+    solidNavigation.value = false
   }
-};
+}
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
+  window.addEventListener('scroll', handleScroll)
+})
 </script>
 
 <style lang="scss" scoped>
