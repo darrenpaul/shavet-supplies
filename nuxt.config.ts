@@ -1,6 +1,6 @@
 const metaTitle = 'Shavet Supplies'
 const metaDescription =
-  'Shavet Supplies have over 30 years of experience in the poultry industry. We have been involved in all aspects of poultry production, from hatcheries to processing plants. We are committed to providing the highest quality products and services to our customers.'
+  'Shavet Supplies has over 30 years of experience in the poultry industry. We have been involved in all aspects of poultry production, from hatcheries to processing plants. We are committed to providing the highest quality products and services to our customers.'
 
 const host = 'https://shavet-supplies.pages.dev/'
 const imageHost = 'img/branding.png'

@@ -23,7 +23,7 @@
 
     <div class="mobile-navigation">
       <div class="flex items-center justify-between w-full">
-        <div class="flex w-10">
+        <div class="flex w-10 h-10">
           <ShavetIcon />
         </div>
         <button class="mobile-toggle-button" @click="showMobileMenu = !showMobileMenu">

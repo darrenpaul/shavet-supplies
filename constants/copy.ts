@@ -26,7 +26,7 @@ export const HOME_COPY = {
   // ABOUT US
   experienceTitle: '+30 years of experience',
   experienceDescription:
-    'Shavet Supplies have over 30 years of experience in the poultry industry. We have been involved in all aspects of poultry production, from hatcheries to processing plants. We are committed to providing the highest quality products and services to our customers.',
+    'Shavet Supplies has over 30 years of experience in the poultry industry. We have been involved in all aspects of poultry production, from hatcheries to processing plants. We are committed to providing the highest quality products and services to our customers.',
   deliveryTitle: 'Delivery to the farm',
   deliveryDescription:
     'If you need your products delivered directly to you, we can certainly arrange that! We work with a number of different delivery companies and have our own delivery drivers, so we can find one that will work best for you and your schedule.',
