@@ -3,39 +3,39 @@ export const CLIENT_COPY = {
 }
 
 export const HOME_COPY = {
-  heading: 'The one stop shop for all your poultry needs!',
+  heading: 'Your one stop shop for all your poultry needs!',
   // SERVICES
   vaccineTitle: 'Poultry Vaccines',
   vaccineDescription:
-    'Shavet Supplies provides information about poultry vaccines so that people can vaccinate their chickens correctly. We have different types of vaccines available, and their team is available to answer any questions people may have about poultry vaccines.',
+    'We provide information about poultry vaccines so that you can take the guesswork out of correctly vaccinating your chickens. We have different types of vaccines available, and our team is able to answer any vaccine-related questions you may have.',
   waterTitle: 'Deionised Water',
   waterDescription:
-    'Deionised water has been treated to remove all of the dissolved ions, or minerals, that can be found in regular tap water. This makes it an ideal choice for use in many industries and applications where pure water is required.',
+    'Deionised water has been treated to remove all the dissolved ions, or minerals, that can be found in regular tap water. This makes it an ideal choice for mixing vaccines into water and keeping your chickens safe.',
   clothingTitle: 'Protective Clothing',
   clothingDescription:
-    'We provide protective clothing such as masks, gloves, aprons, and goggles. It is important to wear protective clothing when working with hazardous materials or in an environment where there is a risk of injury.',
+    'We sell a range of high-quality protective clothing including masks, gloves, aprons, and goggles. We know that it’s important to wear protective clothing when working with hazardous materials or in an environment where there is a risk of injury.',
   cleaningTitle: 'Cleaning Products',
   cleaningDescription:
-    'We provide cleaning products for industrial and home use, because we believe in the importance of keeping our environment clean. We offer a wide variety of cleaning products that are designed to meet the specific needs of our customers.',
+    'Here at Shavet Supplies, we provide industrial and home use cleaning products so that you can better care for your equipment and environment. We offer a wide variety of cleaning products that are designed to meet your specific needs.',
   maintenanceTitle: 'Farm Maintenance',
   maintenanceDescription:
-    'Shavet Supplies can provide maintenance to farms in a number of ways. We can provide scheduled maintenance services to ensure that your farm equipment is always running properly. We can also provide emergency repair services if something breaks down.',
+    'We provide a number of farm maintenance services. We can provide scheduled maintenance services to ensure that your farm equipment is always running properly. We also provide emergency repair services for those unforeseen moments.',
   equipmentTitle: 'Poultry Equipment',
   equipmentDescription:
-    'If you are interested in purchasing poultry equipment, Shavet Supplies has a variety of options available. Farmers find that purchasing poultry equipment from us is a convenient way to get the supplies they need without having to leave their home.',
+    'If you’re interested in purchasing poultry equipment, we have a variety of options available. Farmers find that purchasing poultry equipment from us is a convenient way to get the supplies they need without having to leave their home.',
   // ABOUT US
   experienceTitle: '+30 years of experience',
   experienceDescription:
-    'Shavet Supplies has over 30 years of experience in the poultry industry. We have been involved in all aspects of poultry production, from hatcheries to processing plants. We are committed to providing the highest quality products and services to our customers.',
+    'Shavet Supplies has over 30 years experience in the poultry industry. We’ve been involved in all aspects of poultry production, from hatcheries to processing plants. We’re committed to providing the highest quality products and services to our customers.',
   deliveryTitle: 'Delivery to the farm',
   deliveryDescription:
-    'If you need your products delivered directly to you, we can certainly arrange that! We work with a number of different delivery companies and have our own delivery drivers, so we can find one that will work best for you and your schedule.',
+    'If you need your products delivered directly to you, we can certainly arrange that! We work with a number of different delivery companies and have our own delivery drivers, so we can find a delivery solution that works best for you and your schedule.',
   sourcingTitle: 'Product sourcing',
   sourcingDescription:
-    "At Shavet Supplies, we understand that sourcing products can be a difficult and time-consuming process. Our team of experienced sourcing professionals are familiar with all the ins and outs of the sourcing process, and they'll work tirelessly to find the product for you.",
+    "We understand that sourcing products can be a difficult and time-consuming process. Our team of experienced professionals are familiar with all the ins and outs of the sourcing process, and they'll work tirelessly to find the right product for you.",
   customerTitle: 'Customer service',
   customerDescription:
-    "At Shavet Supplies, we pride ourselves on providing friendly, attentive customer service. Our staff is always happy to help you find exactly what you need. Whether you're a regular or shopping with us for the first time, you'll always be greeted with a smile at Shavet Supplies.",
+    "At Shavet Supplies, we pride ourselves on providing friendly, attentive customer service. We’re always happy to help you find exactly what you need. Whether you're a regular or shopping with us for the first time, you'll always be greeted with a smile.",
   aboutSharon:
     'Sha-Vet Supplies was started in 2007 by Sharon Paul, who has been in the Poultry Industry since 1990. She started her Poultry career at Immuno-Vet Services. We take pride in supplying products to the Poultry and Pigeon Industry.',
   headerImage: '/img/home-header.jpg',
