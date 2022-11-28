@@ -27,16 +27,18 @@
           </h3>
           <div class="flex">
             <div class="mr-3">
-              <a href="#">
+              <a :href="FOOTER_COPY.linkedinUrl" target="_blank">
                 <div class="icon-badge-white">
-                  <Icon icon="akar-icons:linkedin-fill" width="22" height="22" />
+                  <a>
+                    <Icon icon="akar-icons:linkedin-fill" width="22" height="22" />
+                  </a>
                 </div>
               </a>
             </div>
             <div class="mr-3">
-              <a href="#">
+              <a :href="FOOTER_COPY.facebookUrl" target="_blank">
                 <div class="icon-badge-white">
-                  <Icon icon="akar-icons:google-fill" width="22" height="22" />
+                  <Icon icon="akar-icons:facebook-fill" width="22" height="22" />
                 </div>
               </a>
             </div>

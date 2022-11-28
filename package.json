@@ -8,24 +8,27 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.1.1",
-    "nuxt": "3.0.0-rc.12",
-    "@funken-studio/sitemap-nuxt-3": "^4.0.0",
     "@babel/eslint-parser": "^7.19.1",
+    "@funken-studio/sitemap-nuxt-3": "^4.0.0",
     "@iconify/vue": "^4.0.0",
     "@nuxtjs/eslint-config": "^11.0.0",
     "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/tailwindcss": "^6.1.1",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin": "^1.0.1",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
+    "nuxt": "3.0.0-rc.12",
     "postcss": "^8.4.18",
     "postcss-custom-properties": "^12.1.10",
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
     "sass-loader": "13.1.0",
     "vue-gtag-next": "^1.14.0"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
   }
 }

@@ -12,6 +12,10 @@ export default defineNuxtConfig({
   generate: { fallback: true },
   css: ['~/assets/css/global.scss'],
   modules: ['@nuxtjs/tailwindcss', '@funken-studio/sitemap-nuxt-3'],
+  publicRuntimeConfig: {
+    SEND_TO_EMAIL: 'GG7ydBaNJ9Q6Wyzbch',
+    EMAIL_SERVER: 'https://us-central1-email-server-fd5bb.cloudfunctions.net/app/api/send-email'
+  },
   meta: {
     title: metaTitle,
     htmlAttrs: {

@@ -164,16 +164,16 @@
             </div>
             <div class="flex">
               <div class="column-item mx-3">
-                <input placeholder="name" />
+                <input v-model="name" placeholder="name" name="name" type="name" />
               </div>
               <div class="column-item mx-3">
-                <input placeholder="email" />
+                <input v-model="emailAddress" placeholder="email" name="email" type="email" />
               </div>
             </div>
             <div class="mx-3">
-              <input placeholder="subject" />
-              <textarea placeholder="message" />
-              <button>{{ HOME_COPY.sendMessage }}</button>
+              <input v-model="subject" placeholder="subject" name="subject" type="subject" />
+              <textarea v-model="message" placeholder="message" name="message" type="message" />
+              <button @click="handleFormSubmit">{{ HOME_COPY.sendMessage }}</button>
             </div>
           </div>
 
@@ -229,6 +229,7 @@
 </template>
 
 <script setup lang="ts">
+import isEmail from 'validator/es/lib/isEmail'
 import { HOME_COPY } from '~~/constants/copy'
 import { Icon } from '@iconify/vue'
 import FarmScene from '~~/components/backgrounds/FarmScene.vue'
@@ -242,6 +243,38 @@ import ExperienceIcon from '~~/components/icons/ExperienceIcon.vue'
 import DeliveryIcon from '~~/components/icons/DeliveryIcon.vue'
 import SourcingIcon from '~~/components/icons/SourcingIcon.vue'
 import CustomerIcon from '~~/components/icons/CustomerIcon.vue'
+
+const config = useRuntimeConfig()
+
+const name = ref(undefined)
+const emailAddress = ref(undefined)
+const subject = ref(undefined)
+const message = ref(undefined)
+
+const handleFormSubmit = async () => {
+  if (!emailAddress.value && isEmail(emailAddress.value)) return
+
+  const data = {
+    to: config.SEND_TO_EMAIL,
+    from: emailAddress.value,
+    subject: subject.value,
+    message: `Name: ${name.value} Message: ${message.value}`
+  }
+
+  try {
+    await $fetch(config.EMAIL_SERVER, {
+      method: 'POST',
+      body: data
+    })
+    name.value = ''
+    emailAddress.value = ''
+    subject.value = ''
+    message.value = ''
+    alert('Message send')
+  } catch (error) {
+    console.error(error)
+  }
+}
 </script>
 
 <style lang="scss">

@@ -1,7 +1,7 @@
 export const HOME_ROUTE = {
   name: 'Home',
   key: 'home',
-  path: '/'
+  path: '#'
 }
 
 export const SERVICES_ROUTE = {

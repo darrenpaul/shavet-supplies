@@ -1,12 +1,14 @@
 <template>
   <header>
     <div :class="['desktop-navigation', solidNavigation && 'desktop-navigation-solid']">
-      <div class="flex items-center">
-        <div class="flex w-10">
-          <ShavetIcon />
+      <a href="#">
+        <div class="flex items-center">
+          <div class="flex w-10">
+            <ShavetIcon />
+          </div>
+          <h4 class="m-0 ml-4 h-full">{{ CLIENT_COPY.companyName }}</h4>
         </div>
-        <h4 class="m-0 ml-4 h-full">{{ CLIENT_COPY.companyName }}</h4>
-      </div>
+      </a>
 
       <div class="links">
         <a
