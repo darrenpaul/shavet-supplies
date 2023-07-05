@@ -103,5 +103,11 @@ export default defineNuxtConfig({
   sitemap: {
     hostname: host,
     gzip: true
+  },
+  nitro: {
+    prerender: { crawlLinks: true, ignore: [] }
+  },
+  experimental: {
+    payloadExtraction: true
   }
 })
