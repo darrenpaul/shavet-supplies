@@ -209,13 +209,23 @@
                 </div>
 
                 <!-- PHONE NUMBER -->
+                <div class="column mb-4">
+                  <div class="icon-badge">
+                    <Icon class="text-white" icon="fa-solid:phone-alt" width="22" height="22" />
+                  </div>
+                  <div class="mx-3 my-auto">
+                    <a target="_blank" :href="`tel:${HOME_COPY.phoneNumber1}`" class="link">{{
+                      HOME_COPY.phoneNumber1
+                    }}</a>
+                  </div>
+                </div>
                 <div class="column">
                   <div class="icon-badge">
                     <Icon class="text-white" icon="fa-solid:phone-alt" width="22" height="22" />
                   </div>
                   <div class="mx-3 my-auto">
-                    <a target="_blank" :href="`tel:${HOME_COPY.phoneNumber}`" class="link">{{
-                      HOME_COPY.phoneNumber
+                    <a target="_blank" :href="`tel:${HOME_COPY.phoneNumber2}`" class="link">{{
+                      HOME_COPY.phoneNumber2
                     }}</a>
                   </div>
                 </div>
@@ -280,9 +290,11 @@ const handleFormSubmit = async () => {
 <style lang="scss">
 .home-header {
   @apply w-full h-screen overflow-hidden bg-feature;
+
   .home-heading-text-wrapper {
     @apply absolute w-fit md:w-1/2 flex m-2 mt-28 md:m-12 md:mt-36;
   }
+
   .header-image {
     @apply object-cover w-full h-screen;
   }
@@ -290,6 +302,7 @@ const handleFormSubmit = async () => {
 
 .service {
   @apply w-full md:w-1/2 lg:w-1/3;
+
   .service-icon-wrapper {
     @apply w-12 mb-4;
   }

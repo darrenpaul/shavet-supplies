@@ -52,11 +52,12 @@ export const HOME_COPY = {
   contactForm: 'Contact Form',
   sendMessage: 'Send Message',
   getInTouch: 'Get in Touch',
-  phoneNumber: '(+27) 66 215 0265',
+  phoneNumber1: '066 215 0265',
+  phoneNumber2: '078 339 0017',
   emailAddress: 'orders@shavet.co.za',
-  businessAddress: '24 Anderson South Rd, Joostenbergvlakte',
+  businessAddress: 'Unit 2, 23 Tanzanite Crescent, Kraaifontein',
   businessAddressLink:
-    'https://www.google.com/maps/place/Sha-Vet+Supplies/@-33.8346025,18.7295663,20.39z/data=!4m13!1m7!3m6!1s0x1dcc5411ed85e47b:0x287c490742a58859!2s24+Anderson+S+Rd,+Joostenberg+Vlakte,+Cape+Town,+7570,+South+Africa!3b1!8m2!3d-33.8343964!4d18.7295443!3m4!1s0x1dcc550c3c75bcc5:0xa67a523765f3e0d4!8m2!3d-33.8344263!4d18.7295971'
+    'https://www.google.com/maps/place/2,+23+Tanzanite+Cres,+Kraaifontein,+Cape+Town,+7570,+South+Africa/@-33.8257886,18.6993752,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc5699c89212e9:0xd54eb34189a62e07!8m2!3d-33.8257931!4d18.7019501?entry=ttu'
 }
 
 export const FOOTER_COPY = {
@@ -75,11 +76,15 @@ export const FOOTER_COPY = {
     {
       value: '(+27) 66 215 0265',
       type: 'phone'
+    },
+    {
+      value: '(+27) 78 339 0017',
+      type: 'phone'
     }
   ],
-  address: ['24 Anderson South Rd', 'Joostenbergvlakte', '7570'],
+  address: ['Unit 2, 23 Tanzanite Crescent', 'Kraaifontein', '7570'],
   addressLink:
-    'https://www.google.com/maps/place/Sha-Vet+Supplies/@-33.8346025,18.7295663,20.39z/data=!4m13!1m7!3m6!1s0x1dcc5411ed85e47b:0x287c490742a58859!2s24+Anderson+S+Rd,+Joostenberg+Vlakte,+Cape+Town,+7570,+South+Africa!3b1!8m2!3d-33.8343964!4d18.7295443!3m4!1s0x1dcc550c3c75bcc5:0xa67a523765f3e0d4!8m2!3d-33.8344263!4d18.7295971',
+    'https://www.google.com/maps/place/2,+23+Tanzanite+Cres,+Kraaifontein,+Cape+Town,+7570,+South+Africa/@-33.8257886,18.6993752,17z/data=!3m1!4b1!4m5!3m4!1s0x1dcc5699c89212e9:0xd54eb34189a62e07!8m2!3d-33.8257931!4d18.7019501?entry=ttu',
   linkedinUrl: 'https://www.linkedin.com/company/sha-vet-supplies/',
   facebookUrl: 'https://m.facebook.com/profile.php?id=100066550729649&_rdr'
 }
